@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/isOk
+Accept: application/json
+
+###
+GET http://localhost:8080/api/businessException
+Accept: application/json
+
+###
+GET http://localhost:8080/api/nullException
+Accept: application/json
+
+###
+GET http://localhost:8080/api/generalException
+Accept: application/json
