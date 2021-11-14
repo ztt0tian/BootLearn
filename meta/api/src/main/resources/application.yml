@@ -4,3 +4,5 @@ spring:
 server:
   servlet:
     context-path: /api
+logging:
+  config: classpath:logback.xml

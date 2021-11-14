@@ -19,12 +19,12 @@ public class GlobalExceptionHandleConfig {
     }
     @ExceptionHandler(NullPointerException.class)
     public ApiResponseDto nullExceptionHandle(NullPointerException e) {
-        log.error(ExceptionConstant.NULL_EXCEPTION_DESC, e.getMessage());
+        log.error(ExceptionConstant.NULL_EXCEPTION_DESC, e);
         return ApiResponseDto.error(ResponseEnum.SERVER_INTERNAL_ERROR);
     }
     @ExceptionHandler(Exception.class)
     public ApiResponseDto generalExceptionHandle(Exception e) {
-        log.error(ExceptionConstant.GENERAL_EXCEPTION_DESC, e.getMessage());
+        log.error(ExceptionConstant.GENERAL_EXCEPTION_DESC, e);
         return ApiResponseDto.error(ResponseEnum.SERVER_INTERNAL_ERROR);
     }
 }
