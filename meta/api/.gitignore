@@ -1,6 +1,6 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -12,7 +12,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+api.iml
+mvnw
+mvnw.cmd
 ### IntelliJ IDEA ###
 .idea
 *.iws
